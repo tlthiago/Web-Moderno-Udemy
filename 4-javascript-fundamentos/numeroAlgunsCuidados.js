@@ -4,3 +4,5 @@ console.log("show!" * 2); //Retorna NaN
 console.log(0.1 + 0.7); //Não retorna 0.8
 //console.log(10.toString()); Não é possível chamar a função para conversão de número literal estando fora de parenteses
 console.log((10.345).toFixed(2)); //Assim funciona
+console.log("3" + 2); //Irá concatenar por causa do operador +
+console.log("3" - 2); //Irá subtrair
