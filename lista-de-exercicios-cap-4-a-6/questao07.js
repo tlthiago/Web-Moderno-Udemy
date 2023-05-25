@@ -6,17 +6,21 @@
 // “Delta é negativo”.
 
 function bhaskaraResolve(ax2, bx, c) {
-    let delta, resultado;
+    let delta = Math.pow(bx, 2) - 4 * ax2 * c;
+    console.log(4 * ax2 * c);
+    console.log(delta);
+    let resultado = [1, 2];
 
     if (delta < 0) {
         console.log("Delta é negativo.");
     } else if (delta === 0) {
-        resultado = [a, b];
+        resultado[1] = (-bx + Math.sqrt(delta)) / 2 * ax2;
+        resultado[2] = (-bx - Math.sqrt(delta)) / 2 * ax2;
     } else {
-        resultado = [a, b];
+        resultado[1] = (-bx + Math.sqrt(delta)) / 2 * ax2;
+        resultado[2] = (-bx - Math.sqrt(delta)) / 2 * ax2;
     }
-
-
 }
 
-bhaskaraResolve(3, -5, 12);
+console.log(bhaskaraResolve(1, 12, -13));
+// console.log(bhaskaraResolve(3, -5, 12));

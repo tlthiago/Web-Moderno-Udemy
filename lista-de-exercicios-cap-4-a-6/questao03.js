@@ -23,4 +23,4 @@ console.log(mathPow2(2, 4));
 function mathPow3(base, exponent) {
   return Math.pow(base, exponent);
 }
-console.log(mathPow3(2, 4));
+console.log(mathPow3(-5, 2));
